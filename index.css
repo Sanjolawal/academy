@@ -2,7 +2,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: Inter;
-  display: grid;
+  /* display: grid; */
+  overflow-x: hidden;
 }
 .headerMain {
   border-bottom: 1px solid rgba(198, 210, 255, 0.3);
@@ -65,6 +66,7 @@ header .hamburger {
   font-weight: 700;
   margin: 30px 0 0 0;
   padding: 0;
+  text-align: center;
 }
 .hero p {
   font-weight: 400;
@@ -100,6 +102,34 @@ header .hamburger {
   margin: 0;
   padding: 0;
 }
+.search-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  /* background: red; */
+  margin: 20px 0 20px 0;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+}
+
+.search-input {
+  background: rgba(244, 248, 251, 1);
+  border: 1px solid rgba(238, 238, 238, 1);
+  padding: 8px 13px 8px 12px;
+  border-radius: 60px;
+  font-size: 16px;
+  width: 82%;
+  padding-left: 42px;
+}
+.search-wrapper button {
+  margin: 0 0 0 20px;
+  justify-self: start;
+}
+
 .search .tabs {
   display: flex;
   column-gap: 10px;
@@ -124,6 +154,104 @@ header .hamburger {
   margin: 3px;
 }
 
+/* Courses section  */
+.course {
+  margin-bottom: 130px;
+}
+.course h1,
+.course p {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.course p {
+  margin: 10px 0 0 0;
+}
+.course .container {
+  justify-self: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+.courseTabs {
+  display: flex;
+  justify-self: center;
+  gap: 8px;
+  width: 100%;
+  margin: 60px 0 40px 0;
+}
+
+.courseCards {
+  /* background: red; */
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  overflow-x: scroll;
+  width: 100%;
+}
+.courseCards::-webkit-scrollbar {
+  display: none;
+}
+.courseCards {
+  scrollbar-width: none;
+}
+
+.courseTabs p {
+  text-align: start;
+  background: rgba(249, 249, 249, 1);
+  padding: 8px 13px 8px 13px;
+  border-radius: 60px;
+  border: 1px solid rgba(238, 238, 238, 1);
+  font-size: 14px;
+  width: fit-content;
+  margin: 3px;
+  flex-shrink: 0;
+}
+.courseTabs .active {
+  color: white;
+  background: black;
+}
+
+.card {
+  border-radius: 12px;
+  border: 1px solid rgba(229, 229, 229, 1);
+  flex-shrink: 0;
+  width: 25vw;
+}
+.card .img1 {
+  border-radius: 12px 12px 0 0;
+  width: 100%;
+}
+.card-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  /* background: green; */
+  margin: 15px 0 0 16px;
+}
+.card-info p {
+  margin: 0;
+  padding: 0;
+}
+.card .category {
+  padding: 7px 12px 7px 12px;
+  border-radius: 60px;
+  background: rgba(243, 244, 246, 1);
+  margin-left: 16px;
+  width: fit-content;
+}
+.course-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 16px;
+}
+.course-info {
+  color: rgba(75, 85, 99, 1);
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 16px;
+  text-align: left;
+}
+
 @media all and (max-width: 1300px) {
   .container {
     width: 96%;
@@ -133,6 +261,11 @@ header .hamburger {
   }
   .search {
     width: 90%;
+  }
+  .courseTabs {
+  }
+  .card {
+    width: 35vw;
   }
 }
 
@@ -168,5 +301,39 @@ header .hamburger {
   }
   .hero .second {
     font-size: 32px;
+  }
+  .search-wrapper {
+    display: block;
+  }
+  .search-wrapper button {
+    margin: 12px 0 0 0;
+  }
+  .search-icon {
+    top: 5px;
+  }
+  .course h1 {
+    font-size: 24px;
+  }
+  .course p {
+    font-size: 15px;
+  }
+  .courseTabs {
+    width: 400px;
+    /* background: red; */
+    margin-left: 10px;
+    overflow-x: scroll;
+    justify-self: start;
+  }
+  .courseCards {
+    margin-left: 10px;
+  }
+  .courseTabs::-webkit-scrollbar {
+    display: none;
+  }
+  .courseTabs {
+    scrollbar-width: none;
+  }
+  .card {
+    width: 65vw;
   }
 }
