@@ -40,7 +40,7 @@ header ul {
   display: flex;
   align-items: center;
   gap: 4px;
-  width: fit-content;
+  justify-content: flex-start;
 }
 header .hamburger {
   display: none;
@@ -592,15 +592,14 @@ footer {
   header {
     grid-template-columns: 1fr 2.5fr 1fr;
   }
-  header ul {
-    gap: 10px;
-  }
+
   .payments {
     grid-template-columns: 1fr 1fr;
   }
 
   .price {
     gap: 3px;
+    justify-content: flex-start;
   }
 }
 
