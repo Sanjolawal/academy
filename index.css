@@ -430,6 +430,10 @@ header .hamburger {
 @media all and (max-width: 1090px) {
   .payments {
     grid-template-columns: 1fr 1fr;
+    margin-top: 60px;
+  }
+  .price {
+    gap: 2px;
   }
 }
 
@@ -531,5 +535,8 @@ header .hamburger {
   .plan {
     display: grid;
     justify-items: center;
+  }
+  .price {
+    gap: 2px;
   }
 }
