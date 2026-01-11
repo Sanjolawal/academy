@@ -519,7 +519,7 @@ footer {
 
 @media all and (max-width: 850px) {
   .container {
-    width: 94%;
+    width: 98%;
     /* background: red; */
     padding: 0;
   }
@@ -583,7 +583,7 @@ footer {
     scrollbar-width: none;
   }
   .card {
-    width: 65vw;
+    width: 60vw;
   }
   .serve-container {
     margin-top: 130px;
