@@ -26,7 +26,6 @@ header {
   width: 100%;
   grid-template-columns: 1fr 6fr 1fr;
   align-items: center;
-  /* background: red; */
 }
 header ul {
   display: flex;
@@ -589,9 +588,11 @@ footer {
 }
 
 @media all and (max-width: 1090px) {
+  header {
+    grid-template-columns: 1fr 2.5fr 1fr;
+  }
   .payments {
     grid-template-columns: 1fr 1fr;
-    /* margin-top: 196px; */
   }
 
   .price {
@@ -603,6 +604,9 @@ footer {
   .container {
     width: 94%;
     /* background: red; */
+  }
+  .headerMain {
+    padding: 16px 0 16px 0;
   }
   header {
     display: flex;
