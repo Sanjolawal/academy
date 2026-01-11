@@ -6,6 +6,10 @@ body {
   /* display: grid; */
   width: 100%;
   overflow-x: hidden;
+  background: red;
+}
+html {
+  background: yellow;
 }
 .headerMain {
   border-bottom: 1px solid rgba(198, 210, 255, 0.3);
