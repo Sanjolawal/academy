@@ -1,8 +1,9 @@
-body {
+html, body {
   padding: 0;
   margin: 0;
   font-family: Inter;
   /* display: grid; */
+  width: 100%;
   overflow-x: hidden;
 }
 .headerMain {
@@ -519,7 +520,7 @@ footer {
 
 @media all and (max-width: 850px) {
   .container {
-    width: 98%;
+    width: 94%;
     /* background: red; */
     padding: 0;
   }
