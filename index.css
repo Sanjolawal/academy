@@ -18,12 +18,15 @@ body {
   max-width: 1280px;
   justify-self: center;
   padding: 0 20px 0 20px;
+  /* background: green; */
+  width: 100%;
 }
 header {
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 6fr 1fr;
   align-items: center;
+  /* background: red; */
 }
 header ul {
   display: flex;
@@ -96,7 +99,7 @@ header .hamburger {
 .search {
   border: 6px solid rgba(251, 248, 255, 1);
   /* background: red; */
-  width: 120%;
+  width: 96%;
   margin-top: 100px;
   padding: 20px 20px 8px 20px;
   margin-bottom: 100px;
@@ -173,16 +176,17 @@ header .hamburger {
   margin: 16px 0 0 0;
 }
 .course .container {
-  justify-self: center;
-  width: 100%;
-  box-sizing: border-box;
+  /* justify-self: center; */
+  /* width: 100%; */
+  /* box-sizing: border-box; */
 }
 .courseTabs {
   display: flex;
   justify-self: center;
   gap: 8px;
-  width: 100%;
+  /* width: 85%; */
   margin: 73px 0 50px 0;
+  width: 100%;
 }
 
 .courseCards {
@@ -338,16 +342,13 @@ header .hamburger {
 }
 .review,
 .review1 {
-  width: 400px;
-  height: 238px;
-  /* background: yellow; */
   box-shadow: 0px 7px 14px 0px rgba(234, 234, 234, 1);
   border-radius: 24px;
-  padding: 41px;
+  padding: 41px 41px 40px 41px;
   box-sizing: border-box;
 }
 .review1 {
-  margin-top: 60px;
+  transform: translateY(60px);
 }
 .review p,
 .review1 p {
@@ -558,8 +559,8 @@ footer {
   header {
     grid-template-columns: 1fr 4fr 1fr;
   }
-  .search {
-    width: 90%;
+  .container {
+    width: 96%;
   }
   .courseTabs {
   }
@@ -567,13 +568,20 @@ footer {
     width: 35vw;
   }
   .payments {
-    width: 100%;
+    /* width: 100%; */
   }
   .footer {
     grid-template-columns: 4fr 8fr;
   }
   .reviews {
     grid-template-columns: 1fr 1fr;
+  }
+  .review,
+  .review1 {
+    padding: 41px 41px 41px 41px;
+  }
+  .review1 {
+    transform: translateY(0);
   }
   .review1 {
     margin: 0;
@@ -585,6 +593,7 @@ footer {
     grid-template-columns: 1fr 1fr;
     /* margin-top: 196px; */
   }
+
   .price {
     gap: 3px;
   }
