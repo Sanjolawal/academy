@@ -288,7 +288,9 @@ header .hamburger {
 
 /* Testimonials section  */
 .testimonials {
-  margin: 100px 0 100px 0;
+  margin: 100px 0 200px 0;
+  width: 100%;
+  /* background: green; */
 }
 .testimonials p,
 .testimonials h1 {
@@ -301,6 +303,70 @@ header .hamburger {
 .testimonials p {
   font-size: 20px;
   font-weight: 400;
+}
+.reviews {
+  height: 740px;
+  /* background: red; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 24px;
+  overflow-y: scroll;
+  /* fade-blur top & bottom */
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 40%,
+    black 60%,
+    transparent 100%
+  );
+
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 40%,
+    black 60%,
+    transparent 100%
+  );
+  margin: 60px 0 0 0;
+}
+.reviews::-webkit-scrollbar {
+  display: none;
+}
+.reviews {
+  scrollbar-width: none;
+}
+.review,
+.review1 {
+  width: 400px;
+  height: 238px;
+  /* background: yellow; */
+  box-shadow: 0px 7px 14px 0px rgba(234, 234, 234, 1);
+  border-radius: 24px;
+  padding: 41px;
+  box-sizing: border-box;
+}
+.review1 {
+  margin-top: 60px;
+}
+.review p,
+.review1 p {
+  margin: 0 0 20px 0;
+  padding: 0;
+  font-size: 15.6;
+  text-align: start;
+}
+.profile-div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.profile-div .content p {
+  margin: 0;
+  padding: 0;
+}
+.profile-div .content .p1 {
+  font-weight: 500;
 }
 
 /* Payment plans section  */
@@ -506,6 +572,12 @@ footer {
   .footer {
     grid-template-columns: 4fr 8fr;
   }
+  .reviews {
+    grid-template-columns: 1fr 1fr;
+  }
+  .review1 {
+    margin: 0;
+  }
 }
 
 @media all and (max-width: 1090px) {
@@ -520,7 +592,7 @@ footer {
 
 @media all and (max-width: 850px) {
   .container {
-    width: 96%;
+    width: 94%;
     /* background: red; */
   }
   header {
@@ -603,12 +675,20 @@ footer {
   .serve-container .second {
     display: block;
   }
+  .testimonials {
+    margin: 50px 0 50px 0;
+  }
   .testimonials h1 {
     font-size: 24px;
   }
   .testimonials p {
     font-size: 18px;
   }
+  .reviews {
+    grid-template-columns: 1fr;
+    height: 982px;
+  }
+
   .plans p {
     font-size: 18px;
   }
@@ -637,6 +717,7 @@ footer {
   .transform p {
     font-size: 18px;
   }
+
   .footer {
     grid-template-columns: 1fr;
     justify-items: center;
