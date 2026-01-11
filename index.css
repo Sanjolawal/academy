@@ -591,6 +591,9 @@ footer {
   header {
     grid-template-columns: 1fr 2.5fr 1fr;
   }
+  header ul {
+    gap: 10px;
+  }
   .payments {
     grid-template-columns: 1fr 1fr;
   }
