@@ -427,6 +427,12 @@ header .hamburger {
   }
 }
 
+@media all and (max-width: 1090px) {
+  .payments {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media all and (max-width: 850px) {
   .container {
     width: 94%;
