@@ -27,7 +27,7 @@ header ul {
   align-items: center;
   list-style: none;
   justify-content: center;
-  gap: 24px;
+  gap: 32px;
   font-weight: 500;
 }
 .dropdown {
@@ -57,14 +57,14 @@ header .hamburger {
   width: 100%;
   display: grid;
   justify-items: center;
-  margin-top: 120px;
+  margin-top: 100px;
   padding: 0;
 }
 .hero .first,
 .hero .second {
   font-size: 60px;
   font-weight: 700;
-  margin: 30px 0 0 0;
+  margin: 32px 0 0 0;
   padding: 0;
   text-align: center;
 }
@@ -72,6 +72,7 @@ header .hamburger {
   font-weight: 400;
   font-size: 17.6px;
   text-align: center;
+  margin-top: 26px 0 0 0;
 }
 
 .hero .second {
@@ -86,15 +87,15 @@ header .hamburger {
   color: white;
   padding: 8px 13px 8px 12px;
   border-radius: 60px;
-  margin-top: 7px;
+  margin-top: 26px;
 }
 .search {
   border: 6px solid rgba(251, 248, 255, 1);
   /* background: red; */
   width: 120%;
-  margin-top: 110px;
+  margin-top: 100px;
   padding: 20px 20px 8px 20px;
-  margin-bottom: 110px;
+  margin-bottom: 100px;
 }
 .search h2 {
   font-weight: 500;
@@ -165,7 +166,7 @@ header .hamburger {
   padding: 0;
 }
 .course p {
-  margin: 10px 0 0 0;
+  margin: 16px 0 0 0;
 }
 .course .container {
   justify-self: center;
@@ -177,7 +178,7 @@ header .hamburger {
   justify-self: center;
   gap: 8px;
   width: 100%;
-  margin: 60px 0 40px 0;
+  margin: 73px 0 50px 0;
 }
 
 .courseCards {
@@ -196,7 +197,7 @@ header .hamburger {
 }
 
 .courseTabs p {
-  text-align: start;
+  text-align: center;
   background: rgba(249, 249, 249, 1);
   padding: 8px 13px 8px 13px;
   border-radius: 60px;
@@ -252,6 +253,160 @@ header .hamburger {
   text-align: left;
 }
 
+/* Who we serve  */
+.serve-container {
+  margin-top: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.serve-container h1 {
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.serve-container p {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  margin: 16px 0 0 0;
+  padding: 0;
+}
+.serve-container img {
+  width: 100%;
+  margin: 100px 0 0 0;
+}
+.serve-container .second {
+  display: none;
+}
+
+/* Payment plans section  */
+.plans {
+  margin-top: 100px;
+  position: relative;
+  width: 100%;
+  /* background: green; */
+  display: grid;
+}
+.plans h1,
+.plans p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.plans p {
+  margin: 16px 0 60px 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+.plans h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.payments {
+  position: absolute;
+  top: 0;
+  margin-top: 136px;
+  /* height: 50vh; */
+  /* background: red; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+  align-items: end;
+  width: 150%;
+  justify-self: center;
+}
+.plan {
+  /* height: 30vh; */
+  /* background: yellow; */
+  border-radius: 24px;
+  box-shadow: rgba(0, 0, 0, 0);
+  border: 1px solid rgba(241, 241, 241, 1);
+  box-shadow: 0px 7px 14px 0px rgba(234, 234, 234, 1);
+  padding: 41px 41px 41px 41px;
+  margin-bottom: 100px;
+}
+.plan1 {
+  /* height: 40vh; */
+  /* background: green; */
+}
+.plan h2 {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 700;
+  font-size: 17.7px;
+  margin: 0 0 30px 0;
+  padding: 0;
+}
+.price {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  margin: 0 0 30px 0;
+  padding: 0;
+}
+.price .p1 {
+  font-size: 32.1px;
+  font-weight: 700;
+  margin: 0 0 0 0;
+  padding: 0;
+}
+.price .p2 {
+  font-size: 16.1px;
+  font-weight: 700;
+  margin: 0 0 0 0;
+  padding: 0;
+}
+.plan button {
+  background: black;
+  color: white;
+  font-size: 15.6px;
+  border-radius: 8px;
+  padding: 7.5px 48.34px 8.5px 47.66px;
+  margin: 0 0 10px 0;
+}
+.plan-info {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  margin-top: 22px;
+}
+.plan-info p,
+.plan-info img {
+  margin: 0;
+  padding: 0;
+}
+.plan-info p {
+  font-size: 13.7px;
+  text-align: start;
+}
+.plan-info img {
+  width: 24px;
+}
+.payments > .plan:nth-child(2) {
+  background: black;
+  color: white;
+}
+.payments > .plan:nth-child(2) button {
+  color: black;
+  background: white;
+
+  padding: 7.5px 68.38px 8.5px 70.62px;
+}
+.payments > .plan:nth-child(3) button {
+  padding: 7.5px 64.67px 8.5px 65.33px;
+}
+.plan-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+.plan-title h2 {
+  margin: 0;
+}
+
 @media all and (max-width: 1300px) {
   .container {
     width: 96%;
@@ -266,6 +421,9 @@ header .hamburger {
   }
   .card {
     width: 35vw;
+  }
+  .payments {
+    width: 100%;
   }
 }
 
@@ -314,8 +472,9 @@ header .hamburger {
   .course h1 {
     font-size: 24px;
   }
-  .course p {
-    font-size: 15px;
+  .course .p {
+    font-size: 18px;
+    margin-left: 10px;
   }
   .courseTabs {
     width: 400px;
@@ -335,5 +494,36 @@ header .hamburger {
   }
   .card {
     width: 65vw;
+  }
+  .serve-container {
+    margin-top: 130px;
+  }
+  .serve-container h1 {
+    font-size: 24px;
+  }
+  .serve-container p {
+    font-size: 18px;
+  }
+  .serve-container img {
+    margin: 32px 0 0 0;
+  }
+  .serve-container .first {
+    display: none;
+  }
+  .serve-container .second {
+    display: block;
+  }
+  .plans p {
+    font-size: 18px;
+  }
+  .plans h1 {
+    font-size: 24px;
+  }
+  .payments {
+    grid-template-columns: 1fr;
+  }
+  .plan {
+    display: grid;
+    justify-items: center;
   }
 }
